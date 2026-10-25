@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GradeFlow - Handwritten Answer Grading</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="top">
+  <a class="brand" href="#top" aria-label="GradeFlow home"><svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1f6fd1"/><path d="M9 17l5 5 9-12" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><span>GradeFlow</span></a>
+  <div class="links"><a href="#grade">Grade</a><a href="#results">Results</a></div>
+  <div class="pills" id="chips" aria-live="polite"></div>
+  <button class="icon" id="theme" aria-label="Toggle dark mode" title="Toggle dark mode">&#9680;</button>
+</nav>
+
+<header class="hero" id="top">
+  <h1>Handwritten Answer Grading Pipeline</h1>
+  <p>OCR &bull; Question Matching &bull; Local LLM Evaluation &bull; Faculty Review</p>
+  <ol class="stepper" id="stepper" aria-label="Progress">
+    <li data-s="1"><i>1</i><span>Teacher PDF</span></li>
+    <li data-s="2"><i>2</i><span>Student PDF</span></li>
+    <li data-s="3"><i>3</i><span>Review</span></li>
+    <li data-s="4"><i>4</i><span>AI Grading</span></li>
+    <li data-s="5"><i>5</i><span>Results</span></li>
+  </ol>
+</header>
+
+<main id="grade">
+  <div class="two">
+    <section class="card green" aria-labelledby="hk"><span class="num">1</span>
+      <h2 id="hk">Teacher answer key <small>One PDF: questions + model answers</small></h2>
+      <div class="uploader" data-p="k"></div>
+    </section>
+    <section class="card orange" aria-labelledby="hs1"><span class="num">2</span>
+      <h2 id="hs1">Student answers <small>One PDF: handwritten answers to all questions</small></h2>
+      <div class="uploader" data-p="s"></div>
+    </section>
+  </div>
+
+  <section class="card blue" aria-labelledby="hr"><span class="num">3</span>
+    <h2 id="hr">Review matched questions <small>Edit text or marks before grading</small></h2>
+    <div class="summary" id="summary" hidden></div>
+    <div id="qlist"><div class="empty"><svg viewBox="0 0 64 64" width="56" height="56" aria-hidden="true"><rect x="10" y="8" width="44" height="48" rx="6" fill="none" stroke="currentColor" stroke-width="3"/><path d="M20 22h24M20 32h24M20 42h14" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><p>Upload and split both PDFs. Questions appear here, matched by number.</p></div></div>
+  </section>
+
+  <section class="card red" aria-labelledby="hg"><span class="num">4</span>
+    <h2 id="hg">Rubrics &amp; AI grading <small>Weights share each question's marks</small></h2>
+    <div class="gradegrid">
+      <div>
+        <label class="field">Student / Roll ID<input id="sid" placeholder="e.g. 2410030817" autocomplete="off"></label>
+        <div class="wbar" id="wbar" aria-hidden="true"></div>
+        <div id="rubrics"></div>
+        <div class="row"><button class="ghost" id="addR" type="button">+ Add rubric</button><span class="hint" id="wsum"></span></div>
+        <button class="primary" id="evalBtn"><span class="btxt">Send to local LLM</span></button>
+      </div>
+      <div class="tracker" id="tracker"><div class="empty small"><p>No job yet. Each submission returns a <code>job_id</code> (HTTP 202) and is scored in the background.</p></div></div>
+    </div>
+  </section>
+
+  <section class="card purple" id="results" aria-labelledby="hres"><span class="num">5</span>
+    <h2 id="hres">Results <small>Three sheets: AI, justification, faculty</small></h2>
+    <div class="stats" id="stats"></div>
+    <div role="tablist" class="tabs">
+      <button role="tab" aria-selected="true" data-t="ai">AI Evaluation</button>
+      <button role="tab" aria-selected="false" data-t="just">AI Score Justification</button>
+      <button role="tab" aria-selected="false" data-t="fac">Faculty Evaluation</button>
+      <button role="tab" aria-selected="false" data-t="acc">Accuracy</button>
+    </div>
+    <div id="sheet"></div>
+  </section>
+</main>
+
+<footer class="foot">Research prototype for an academic project. Handwriting OCR can be wrong and AI marks are suggestions only. A teacher must verify every grade.</footer>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>
