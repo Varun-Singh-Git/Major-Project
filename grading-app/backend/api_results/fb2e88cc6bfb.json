@@ -1,0 +1,260 @@
+{
+  "job_id": "fb2e88cc6bfb",
+  "status": "Completed",
+  "created_at": 1793077223.2656932,
+  "student_id": "2410031683",
+  "student_name": "Varun",
+  "items": [
+    {
+      "no": 1,
+      "key_text": "Explain the seven layers of the OSI reference model and state the main function of\neach layer. (10 marks)\nModel Answer:\nThe OSI model has 7 layers (top to bottom):\n\u2022 Application (7): Provides network services to user applications (HTTP, FTP, SMTP, DNS).\n\u2022 Presentation (6): Data translation, encryption/decryption and compression.\n\u2022 Session (5): Establishes, manages and terminates sessions; handles synchronisation.\n\u2022 Transport (4): End-to-end delivery, segmentation, flow control, error control, port addressing\n(TCP/UDP).\n\u2022 Network (3): Logical (IP) addressing, routing and path selection; unit is the packet.\n\u2022 Data Link (2): Framing, physical (MAC) addressing, error detection and media access control; unit\nis the frame.\n\u2022 Physical (1): Transmission of raw bits over the medium; voltage levels, cables, connectors, bit\nsynchronisation.\nMarking: 1 mark for correct order of all layers; 1 mark per layer function (7); 2 marks for PDU/clarity and\npresentation.",
+      "marks": 10.0,
+      "student_answer": "Explain the seven layers of the OSI reference model and state the main function of\neach layer. (10 marks)\nAnswer:\nThe OSI model has seven layers. They are Physical, Data Link, Network, Transport, Session,\nPresentation and Application.\nPhysical layer sends the bits over the cable. Data Link layer does framing and also error detection\nusing MAC address. Network layer is used for routing the packets using IP address and it also does\nerror detection and correction of data. Transport layer provides end to end delivery of data and\nbreaks the data into segments. Session layer sets up and closes the session between two\ncomputers. Presentation layer is used for encryption and also for converting the data to the format of\nthe application. Application layer is where the user works, for example browser and email.",
+      "rubrics": [
+        {
+          "name": "Concept coverage",
+          "max": 4.0
+        },
+        {
+          "name": "Semantic accuracy",
+          "max": 3.0
+        },
+        {
+          "name": "Completeness",
+          "max": 2.0
+        },
+        {
+          "name": "Clarity",
+          "max": 1.0
+        }
+      ],
+      "ai_scores": {
+        "Concept coverage": 3.5,
+        "Semantic accuracy": 2.5,
+        "Completeness": 2.0,
+        "Clarity": 0.5
+      },
+      "justifications": {
+        "Concept coverage": "The student covered all seven layers of the OSI model but did not provide the specific functions for each layer as accurately as the model answer.",
+        "Semantic accuracy": "The student's description of the functions for each layer is generally accurate but contains some minor inaccuracies and omissions.",
+        "Completeness": "The student's answer is missing the specific functions for each layer, which is a significant part of the question.",
+        "Clarity": "The student's answer is somewhat unclear and lacks coherence, making it difficult to follow the explanation of each layer."
+      },
+      "summary": "The student's answer is largely correct in terms of covering the layers of the OSI model but lacks the specific functions for each layer and is not as clear as the model answer.",
+      "llm_total": 8.5,
+      "components": {
+        "llm": 0.85,
+        "coverage": 0.4264705882352941,
+        "semantic": null,
+        "weights": {
+          "llm": 0.75,
+          "coverage": 0.25
+        }
+      },
+      "ai_total": 7.44,
+      "flag": true
+    },
+    {
+      "no": 2,
+      "key_text": "Differentiate between TCP and UDP with any four points and give one application\nof each. (10 marks)\nModel Answer:\nDifferences between TCP and UDP:\n\u2022 Connection: TCP is connection-oriented (3-way handshake); UDP is connectionless.\n\u2022 Reliability: TCP is reliable (acknowledgements, retransmission, ordered delivery); UDP is\nunreliable with no guarantee of delivery or order.\n\u2022 Speed/Overhead: TCP has a 20-byte header and higher overhead, so it is slower; UDP has an\n8-byte header and is faster.\n\u2022 Flow and congestion control: TCP provides both; UDP provides none.\n\u2022 Applications: TCP - HTTP/HTTPS, FTP, email. UDP - DNS, VoIP, video streaming, online\ngaming.\nMarking: 2 marks per correct difference (4 points = 8 marks); 1 mark each for the TCP and UDP application\nexamples.",
+      "marks": 10.0,
+      "student_answer": "Differentiate between TCP and UDP with any four points and give one application\nof each. (10 marks)\nAnswer:\nTCP is connection oriented and UDP is connectionless. TCP uses a three way handshake before\nsending data. TCP is reliable because it sends acknowledgements and resends lost data.\nUDP is more reliable than TCP because it does not have much overhead, and TCP is faster than\nUDP because it checks everything. UDP header is 8 bytes and TCP header is 20 bytes.\nExample of TCP is HTTP and web browsing. Example of UDP is DNS and video streaming.",
+      "rubrics": [
+        {
+          "name": "Concept coverage",
+          "max": 4.0
+        },
+        {
+          "name": "Semantic accuracy",
+          "max": 3.0
+        },
+        {
+          "name": "Completeness",
+          "max": 2.0
+        },
+        {
+          "name": "Clarity",
+          "max": 1.0
+        }
+      ],
+      "ai_scores": {
+        "Concept coverage": 3.5,
+        "Semantic accuracy": 2.5,
+        "Completeness": 1.5,
+        "Clarity": 0.5
+      },
+      "justifications": {
+        "Concept coverage": "The student covered the main concepts of connection-oriented vs connectionless, reliability, speed, and flow/congestion control. However, the explanation of TCP and UDP's reliability and speed is not accurate and lacks depth.",
+        "Semantic accuracy": "The student's explanation of TCP and UDP's reliability and speed is inaccurate. The student also did not provide a clear example for UDP.",
+        "Completeness": "The student provided four points and one application for each protocol, but the explanations are not detailed enough and contain errors.",
+        "Clarity": "The student's answer is difficult to follow due to the lack of clear explanations and examples. The student's writing is also somewhat messy and hard to read."
+      },
+      "summary": "The student's answer is mostly correct but lacks depth and clarity. The explanations of TCP and UDP's features are not accurate and the examples are not clear. The student should focus on providing more detailed and accurate explanations and examples.",
+      "llm_total": 8.0,
+      "components": {
+        "llm": 0.8,
+        "coverage": 0.5106382978723404,
+        "semantic": null,
+        "weights": {
+          "llm": 0.75,
+          "coverage": 0.25
+        }
+      },
+      "ai_total": 7.28,
+      "flag": false
+    },
+    {
+      "no": 3,
+      "key_text": "A network has the address 192.168.10.0/24. Divide it into 4 equal subnets. Find the\nsubnet mask, block size, usable hosts per subnet, and the network, first host, last\nhost and broadcast address of each subnet. (10 marks)\nModel Answer:\nGiven: 192.168.10.0/24, 4 equal subnets requires borrowing 2 bits (22 = 4).\n\u2022 New prefix = /26, subnet mask = 255.255.255.192.\n\u2022 Block size = 256 - 192 = 64.\n\u2022 Usable hosts per subnet = 26 - 2 = 62.\n\u2022 Subnet 1: Network 192.168.10.0, hosts .1 - .62, broadcast 192.168.10.63\n\u2022 Subnet 2: Network 192.168.10.64, hosts .65 - .126, broadcast 192.168.10.127\n\u2022 Subnet 3: Network 192.168.10.128, hosts .129 - .190, broadcast 192.168.10.191\n\u2022 Subnet 4: Network 192.168.10.192, hosts .193 - .254, broadcast 192.168.10.255\nMarking: Mask 2 marks; block size 1 mark; usable hosts 2 marks; four subnet ranges 1.25 marks each (5\nmarks total, rounded).",
+      "marks": 5.0,
+      "student_answer": "A network has the address 192.168.10.0/24. Divide it into 4 equal subnets. Find the\nsubnet mask, block size, usable hosts per subnet, and the network, first host, last\nhost and broadcast address of each subnet. (10 marks)\nAnswer:\nGiven 192.168.10.0/24. We need 4 subnets so we borrow 2 bits from host part. New mask will be /26\nwhich is 255.255.255.192.\nBlock size = 256 - 192 = 64. Number of hosts in each subnet = 2^6 = 64 hosts.\nSubnet 1: Network 192.168.10.0, first host 192.168.10.1, last host 192.168.10.62, broadcast\n192.168.10.63\nSubnet 2: Network 192.168.10.64, first host 192.168.10.65, last host 192.168.10.127, broadcast\n192.168.10.128\nSubnet 3: Network 192.168.10.128, first host 192.168.10.129, last host 192.168.10.191, broadcast\n192.168.10.192\nSubnet 4: Network 192.168.10.192, first host 192.168.10.193, last host 192.168.10.254, broadcast\n192.168.10.255",
+      "rubrics": [
+        {
+          "name": "Concept coverage",
+          "max": 2.0
+        },
+        {
+          "name": "Semantic accuracy",
+          "max": 1.5
+        },
+        {
+          "name": "Completeness",
+          "max": 1.0
+        },
+        {
+          "name": "Clarity",
+          "max": 0.5
+        }
+      ],
+      "ai_scores": {
+        "Concept coverage": 1.5,
+        "Semantic accuracy": 1.0,
+        "Completeness": 0.5,
+        "Clarity": 0.0
+      },
+      "justifications": {
+        "Concept coverage": "The student correctly identified the need to borrow 2 bits and calculated the subnet mask as 255.255.255.192. However, the student did not provide the correct block size, usable hosts per subnet, or the broadcast addresses for each subnet, which are crucial parts of the question. The student also did not mention the network part of each subnet, which is a significant oversight.",
+        "Semantic accuracy": "The student's answer is generally semantically accurate, but there are several errors in the subnet ranges and broadcast addresses. The student also did not provide the correct block size and usable hosts per subnet.",
+        "Completeness": "The student's answer is incomplete as it does not provide the correct subnet ranges, usable hosts per subnet, and broadcast addresses for each subnet. The student also did not mention the network part of each subnet.",
+        "Clarity": "The student's answer is not clear. The student's notation and presentation of the subnet ranges and broadcast addresses are incorrect and confusing."
+      },
+      "summary": "The student's answer is largely incorrect and incomplete, lacking the necessary details to fully address the question. The student's understanding of the concept is not fully grasped, and the presentation is unclear.",
+      "llm_total": 3.0,
+      "components": {
+        "llm": 0.6,
+        "coverage": 0.7272727272727273,
+        "semantic": null,
+        "weights": {
+          "llm": 0.75,
+          "coverage": 0.25
+        }
+      },
+      "ai_total": 3.16,
+      "flag": false
+    },
+    {
+      "no": 4,
+      "key_text": "Explain the working of CSMA/CD used in Ethernet, including the role of the jam\nsignal and binary exponential backoff. (10 marks)\nModel Answer:\nCSMA/CD (Carrier Sense Multiple Access with Collision Detection) is the MAC method of classic\nhalf-duplex Ethernet (IEEE 802.3).\n\u2022 Carrier sense: A station listens to the medium; if idle it transmits, if busy it waits.\n\u2022 Multiple access: Many stations share the same medium, so two may transmit at the same time.\n\u2022 Collision detection: While transmitting, the station monitors the line; a signal different from what\nit sent indicates a collision.\n\u2022 Jam signal: On detecting a collision the station sends a short jam signal (32 bits) so all stations\nknow a collision occurred.\n\u2022 Binary exponential backoff: After the n-th collision a station waits a random number of slot times\nchosen from 0 to 2n - 1 (n capped at 10), and gives up after 16 attempts.\n\u2022 Not used in Wi-Fi, which uses CSMA/CA because collisions cannot be detected reliably on a\nwireless medium.\nMarking: Carrier sense/multiple access 2; collision detection 2; jam signal 2; backoff 3; clarity 1.",
+      "marks": 10.0,
+      "student_answer": "Explain the working of CSMA/CD used in Ethernet, including the role of the jam\nsignal and binary exponential backoff. (10 marks)\nAnswer:\nCSMA/CD means Carrier Sense Multiple Access with Collision Detection. It is used in Ethernet and\nalso in Wi-Fi networks.\nFirst the station senses the channel. If the channel is free it sends the data, otherwise it waits. If two\nstations send at same time a collision happens. When collision is detected the station stops and\nsends a jam signal so that other stations also know about the collision. After that the station waits for\nsome random time and tries again.",
+      "rubrics": [
+        {
+          "name": "Concept coverage",
+          "max": 4.0
+        },
+        {
+          "name": "Semantic accuracy",
+          "max": 3.0
+        },
+        {
+          "name": "Completeness",
+          "max": 2.0
+        },
+        {
+          "name": "Clarity",
+          "max": 1.0
+        }
+      ],
+      "ai_scores": {
+        "Concept coverage": 2.5,
+        "Semantic accuracy": 2.0,
+        "Completeness": 1.5,
+        "Clarity": 0.5
+      },
+      "justifications": {
+        "Concept coverage": "The student correctly identified CSMA/CD as Carrier Sense Multiple Access with Collision Detection and its use in Ethernet. However, the explanation lacks depth and misses the role of binary exponential backoff.",
+        "Semantic accuracy": "The student's explanation is mostly accurate but contains some minor errors such as stating CSMA/CD is used in Wi-Fi networks, which is incorrect. The explanation of binary exponential backoff is also not clear.",
+        "Completeness": "The student's answer is incomplete as it does not cover the role of the jam signal and binary exponential backoff, which are crucial parts of the CSMA/CD protocol.",
+        "Clarity": "The student's answer is unclear and lacks structure. The explanation of CSMA/CD is somewhat disjointed and does not flow well."
+      },
+      "summary": "The student's answer is partially correct but lacks depth, clarity, and completeness. The explanation of CSMA/CD is accurate but incomplete, and the role of binary exponential backoff is not covered. The student also incorrectly stated that CSMA/CD is used in Wi-Fi networks, which is a significant error.",
+      "llm_total": 6.5,
+      "components": {
+        "llm": 0.65,
+        "coverage": 0.41935483870967744,
+        "semantic": null,
+        "weights": {
+          "llm": 0.75,
+          "coverage": 0.25
+        }
+      },
+      "ai_total": 5.92,
+      "flag": false
+    },
+    {
+      "no": 5,
+      "key_text": "Compare Distance Vector routing and Link State routing. Name one protocol and\nthe algorithm used by each. (10 marks)\nModel Answer:\nDistance Vector: Each router knows only its neighbours and its own distance table; it periodically\nsends its whole routing table to directly connected neighbours only. Based on the Bellman-Ford\nalgorithm. Example protocol: RIP. Slow convergence, count-to-infinity problem, suitable for small\nnetworks.\nLink State: Each router discovers its neighbours, builds link-state advertisements (LSAs) and floods\nthem to all routers in the area, so every router has the complete topology map. Each router then\nruns Dijkstra's shortest path first algorithm. Example protocol: OSPF. Faster convergence, more\nmemory/CPU, suitable for large networks.\nMarking: DV description 3; LS description 3; algorithms 2; protocols 1; comparison points\n(convergence/scalability) 1.",
+      "marks": 10.0,
+      "student_answer": "Compare Distance Vector routing and Link State routing. Name one protocol and\nthe algorithm used by each. (10 marks)\nAnswer:\nIn Distance Vector routing each router sends its routing table to all the routers in the network. It uses\nDijkstra algorithm. Example of Distance Vector protocol is RIP. It is used for small networks.\nIn Link State routing each router knows only its neighbours and the routing table is shared with\nneighbours only. It uses Bellman Ford algorithm. Example is OSPF. Link state converges faster than\ndistance vector.",
+      "rubrics": [
+        {
+          "name": "Concept coverage",
+          "max": 4.0
+        },
+        {
+          "name": "Semantic accuracy",
+          "max": 3.0
+        },
+        {
+          "name": "Completeness",
+          "max": 2.0
+        },
+        {
+          "name": "Clarity",
+          "max": 1.0
+        }
+      ],
+      "ai_scores": {
+        "Concept coverage": 3.0,
+        "Semantic accuracy": 2.0,
+        "Completeness": 1.0,
+        "Clarity": 0.5
+      },
+      "justifications": {
+        "Concept coverage": "The student correctly identified the two routing types and their main characteristics, but missed some details such as the Bellman-Ford and Dijkstra algorithms, and the suitability for different network sizes.",
+        "Semantic accuracy": "The student's description of the algorithms and protocols is mostly accurate, but there are some minor errors like using 'routing table' instead of 'distance table' for Distance Vector and 'neighbours' instead of 'neighboring routers' for Link State.",
+        "Completeness": "The student did not provide a comparison of the two routing types, nor did they mention the count-to-infinity problem for Distance Vector or the scalability issues for Link State.",
+        "Clarity": "The student's answer is somewhat unclear due to the use of 'routing table' instead of 'distance table' and the lack of a clear distinction between the two routing types."
+      },
+      "summary": "The student provided a basic understanding of Distance Vector and Link State routing, but failed to cover all the required points and maintain a high level of accuracy and clarity.",
+      "llm_total": 6.5,
+      "components": {
+        "llm": 0.65,
+        "coverage": 0.3898305084745763,
+        "semantic": null,
+        "weights": {
+          "llm": 0.75,
+          "coverage": 0.25
+        }
+      },
+      "ai_total": 5.85,
+      "flag": false
+    }
+  ],
+  "max_total": 45.0,
+  "faculty_marks": null,
+  "error": null,
+  "flagged": true,
+  "ai_total": 29.65,
+  "updated_at": 1793077634.2200198
+}
